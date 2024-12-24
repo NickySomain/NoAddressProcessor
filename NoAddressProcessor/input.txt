@@ -1,0 +1,22 @@
+PUSH 0
+READ
+PUSH 1
+loop:
+ROR
+SWAP
+DUP
+READ
+ROR
+ADD
+ROL
+CMP
+PUSH end
+JZ
+INC
+PUSH loop
+LDC
+end:
+POP
+POP
+OUT
+FST
